@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="//cdn.jsdelivr.net/npm/mutationobserver-shim/dist/mutationobserver.min.js"></script>
+    <title>alarm</title>
+  </head>
+  <body>
+    <div id="App">
+      <div class="set_curdate">
+        <div class="date_set">
+          <h2>현재시간</h2>
+          <input class="set_time" placeholder="날짜 및 시간" />
+          <button class="change_btn">변경하기</button>
+        </div>
+        <h3 class="current_date"></h3>
+      </div>
+
+      <form class="submit_alarm">
+        <h2 class="set_alarm">알람등록</h2>
+        <div class="alarm_date">
+          <h4>알람시간:</h4>
+          <input class="select_date" placeholder="날짜 및 시간" />
+        </div>
+        <div class="clock_mode">
+          <h4>시계모드:</h4>
+          <select class="clock_mode_set">
+            <option value="general">일반</option>
+            <option value="vibration">진동</option>
+            <option value="night">야간</option>
+          </select>
+        </div>
+        <div class="alarm_mode">
+          <h4>알람모드:</h4>
+          <select class="alarm_mode_set">
+            <option value="general">일반</option>
+            <option value="emergency">긴급</option>
+          </select>
+        </div>
+        <div class="alarm_content">
+          <h4>메모:</h4>
+          <textarea class="alarm_memo" cols="30" rows="10"></textarea>
+        </div>
+        <div style="display: flex">
+          <button class="submit_alarm_btn">알람추가</button>
+          <h4 class="save_error_text"></h4>
+        </div>
+      </form>
+      <ol class="alarm_list"></ol>
+      <div class="time_out" style="margin-top: 3rem">종료 알림</div>
+    </div>
+  </body>
+</html>

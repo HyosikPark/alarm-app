@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#App {
+  padding: 2rem;
+}
+
+.set_curdate {
+  display: flex;
+  flex-direction: column;
+}
+
+.date_set {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.set_time {
+  margin-left: 1rem;
+}
+
+.set_alarm {
+  margin: 1rem 0;
+}
+
+h4 {
+  margin-right: 0.5rem;
+}
+
+.alarm_date {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.alarm_time {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.clock_mode {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.alarm_mode {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.alarm_content {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.alarm_memo {
+  height: 50px;
+}
+
+.summary_info {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.summary_info h3 {
+  margin-right: 2rem;
+}
+
+.summary_info p {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.summary_info button {
+  margin-right: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+
